@@ -10,19 +10,6 @@ import {
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 function MobileOtp() {
-  //   const [seconds, setSeconds] = useState(5); // Initial countdown time in seconds
-
-  // Decrease the countdown timer by 1 every second
-  //   useEffect(() => {
-  //     const timer = setInterval(() => {
-  //       if (seconds > 0) {
-  //         setSeconds(prevSeconds => prevSeconds - 1);
-  //       }
-  //     }, 1000);
-
-  //     // Clear the interval when component unmounts or when seconds reach 0
-  //     return () => clearInterval(timer);
-  //   }, [seconds]);
   const navigate = useNavigate();
   const toast = useToast();
   const [isresend, setisResend] = useState(false);
@@ -78,7 +65,7 @@ function MobileOtp() {
         });
 
         const result = await fetch(
-          "http://localhost:5000/api/v1/users/sendemail",
+          "https://nexiara-backend.onrender.com/api/v1/users/sendemail",
           {
             method: "POST",
             headers: {
@@ -137,7 +124,7 @@ function MobileOtp() {
   const resendOtp = async () => {
     setisResend(true);
     const response = await fetch(
-      "http://localhost:5000/api/v1/users/sendmobile",
+      "https://nexiara-backend.onrender.com/api/v1/users/sendmobile",
       {
         method: "POST",
         headers: {

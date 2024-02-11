@@ -3,6 +3,7 @@ import { Route,Routes } from "react-router-dom"
 import EmailOtp from "./components/EmailOtp"
 import MobileOtp from "./components/MobileOtp"
 import Welcome from "./components/Welcome"
+import NotFound from "./components/NotFound"
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <Route path="/email" element={<EmailOtp></EmailOtp>}></Route>
       <Route path="/mobile" element={<MobileOtp></MobileOtp>}></Route>
       <Route path="/welcome" element={<Welcome></Welcome>}></Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
     </>
   )
