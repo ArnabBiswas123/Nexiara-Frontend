@@ -1,8 +1,30 @@
-# React + Vite
+<h1 align="center" id="title">Nexiara Frontend</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>🛠️ Installation Steps:</h2>
 
-Currently, two official plugins are available:
+<p>1. Clone the repository</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+git clone https://github.com/ArnabBiswas123/Nexiara-Frontend.git
+```
+<p>2. Change into the project directory</p>
+
+```
+cd Nexiara-Frontend
+```
+<p>3. Install dependencies</p>
+
+```
+npm install
+```
+<p>4. Run the Development Server</p>
+
+```
+npm run dev
+```
+<p>5. Explore the Application</p>
+
+Once the development server is running, you can explore the Nexiara frontend application. Any changes you make to the code will automatically trigger hot module replacement, updating the application in real-time.
+
+<h3>Assumption </h3>
+<p>Node.js should preinstalled in your local machine</p>
