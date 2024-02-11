@@ -28,3 +28,4 @@ Once the development server is running, you can explore the Nexiara frontend app
 
 <h3>Assumption </h3>
 <p>Node.js should preinstalled in your local machine</p>
+<p>Your backend server is running</p>
